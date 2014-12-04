@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'ProximaNovaCond';
+    src: url('../fonts/proximanovacond-semibold-webfont.eot');
+    src: url('../fonts/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/proximanovacond-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/proximanovacond-semibold-webfont.woff') format('woff'),
+    url('../fonts/proximanovacond-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1 {
+    color:  #3ba8c0;
+    font-size: 27px;
+    font-weight: 300;
+     margin: 0px;
+}
+
+header {
+
+    height: 116px;
+    margin: 0 auto;
+    background-color: #eff3f7;
+
+}
+
+header .row {
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo {
+    display: block;
+    margin-left: 100px;
+    margin-top: 29px;
+    width: 245px;
+    height: 57px;
+    background: url("../image/Logo.png") no-repeat;
+    float: left;
+}
+
+.social_but {
+    float: right;
+    margin-right: 100px;
+    margin-top: 35px;
+    list-style: none;
+}
+
+.social_but > li {
+    float: left;
+    margin-left: 24px;
+}
+
+.social_but > li > a {
+    display: block;
+    width: 47px;
+    height: 47px;
+
+}
+
+.vk_btn {
+
+    background: url('../image/socialbut.png') 0 0;
+}
+
+.twitter_btn {
+
+    background: url('../image/socialbut.png') -70px 0;
+}
+
+.facebook_btn {
+
+    background: url('../image/socialbut.png') -141px 0;
+}
+
+.github_btn {
+
+    background: url('../image/socialbut.png') -212px 0;
+}
+
+.line {
+    background-color: #1c667a;
+    background: -webkit-linear-gradient(0deg, #1c667a 0%, #f6fafe 0%, #d8d8d8 0%, #f2f6fa 0%, #b6ced6 28%, #1c667a 48%, #b4ccd5 71%, #f2f6fa 100%);
+    background: -moz-linear-gradient(0deg, #1c667a 0%, #f6fafe 0%, #d8d8d8 0%, #f2f6fa 0%, #b6ced6 28%, #1c667a 48%, #b4ccd5 71%, #f2f6fa 100%);
+    background: -o-linear-gradient(0deg, #1c667a 0%, #f6fafe 0%, #d8d8d8 0%, #f2f6fa 0%, #b6ced6 28%, #1c667a 48%, #b4ccd5 71%, #f2f6fa 100%);
+    background: -ms-linear-gradient(0deg, #1c667a 0%, #f6fafe 0%, #d8d8d8 0%, #f2f6fa 0%, #b6ced6 28%, #1c667a 48%, #b4ccd5 71%, #f2f6fa 100%);
+    background: linear-gradient(90deg, #1c667a 0%, #f6fafe 0%, #d8d8d8 0%, #f2f6fa 0%, #b6ced6 28%, #1c667a 48%, #b4ccd5 71%, #f2f6fa 100%);
+    /*width: 1399px;*/
+    height: 3px;
+
+}
+
+.main {
+    background: url("../image/comppattern2.png");
+    padding-top: 39px;
+}
+
+.container {
+    padding: 0 100px 0 100px;
+}
+
+.menu {
+    margin-bottom: 23px;
+
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.main li {
+    list-style: none;
+}
+
+.main a {
+    display: block;
+    font-family: "Fira Sans";
+}
+
+.menu .my_works, .contact_me {
+    width: 250px;
+    height: 73px;
+    line-height: 73px;
+    padding-left: 27px;
+    font-size: 21px;
+    font-weight: 300;
+    text-decoration: none;
+
+}
+
+.menu a:hover {
+    border-bottom: solid 2px #3ba8c0;
+}
+
+.about_me {
+    border-radius: 5px 5px 0 0;
+    background-color: #3ba8c0;
+    color: #ffffff;
+    font-size: 23px;
+    width: 250px;
+    line-height: 77px;
+    padding-left: 27px;
+    height: 73px;
+
+}
+
+.my_works {
+    background-color: #eff3f7;
+    color: #959aa8;
+}
+
+.contact_me {
+    color: #959aa8;
+    background-color: #eff3f7;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.contacts li {
+    width: 250px;
+    height: 39px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 41px;
+}
+
+.contacts li a {
+    color: #ffffff;
+    padding-left: 83px;
+}
+
+.contacts_head {
+    text-align: left;
+    background-color: #3ba8c0;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    color: #fbfcfd;
+    font-size: 21px;
+    padding-left: 20px;
+    line-height: 44px;
+    margin: 0 0 0px;
+}
+
+.mail {
+    background: url("../image/contacts_icons.png") 42px 12px no-repeat #41b9d4;
+
+}
+
+.phone {
+    background: url("../image/contacts_icons.png") 42px -27px no-repeat #48cbe8;
+}
+
+.skype {
+    background: url("../image/contacts_icons.png") 42px -66px no-repeat #51daf8;
+    height: 38px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+footer {
+    background-color: #eff3f7;
+    height: 78px;
+    text-align: center;
+    font-family: "Fira Sans";
+    color: #4a545d;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 78px;
+
+}
+
+.main_info,.work_exp,.edikashin_exp {
+    border-radius: 4px;
+    background-color: #eff3f7;
+    margin-left: 65px;
+}
+.header{
+    max-width: 340px;
+    max-height: 67px;
+
+    border-bottom:solid 2px #3ba8c0 ;
+
+
+}
+
+.header h1{
+    padding-left: 22px;
+    line-height: 67px;
+}
+
+.avatar {
+    height: 200px;
+    width: 200px;
+    background: url("../image/avatar.png") center center no-repeat;
+    background-size: 100%;
+    margin: 16px 0 0 20px;
+
+}
+.info{
+    margin: 20px 0 0 37px;
+}
+.info li{
+    margin-bottom: 17px;
+}
+.info .main_word{
+    color:  #4a545d;
+    font-weight: 500;
+    font-size: 17px;
+}
+.info .second_word{
+    color:  #37424d;
+    font-size: 15px;
+    margin-left:16px;
+    font-weight: 400;
+}
+.tabs{
+    border-radius: 2px;
+    background: -webkit-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+    background: -moz-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+    background: -o-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+    background: -ms-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+    background: linear-gradient(0deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+    height: 19px;
+    display: inline-block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "ProximaNovaCond";
+}
+.tabs>p{
+    margin: 13px 3px;
+}
+
+.place{
+margin-bottom: 32px;
+}
+.place span {
+    font-size: 15px;
+    font-weight: 200;
+}
+.place p{
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 0 0px;
+
+}
