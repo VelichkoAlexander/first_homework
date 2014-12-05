@@ -33,7 +33,7 @@ header .row {
     display: block;
     margin-left: 100px;
     margin-top: 29px;
-    width: 245px;
+    width: 248px;
     height: 57px;
     background: url("../image/Logo.png") no-repeat;
     float: left;
@@ -62,20 +62,37 @@ header .row {
 
     background: url('../image/socialbut.png') 0 0;
 }
+.vk_btn:hover {
+
+    background: url('../image/socialbut_hover.png') 0 0;
+    transition: background  ease .5s;
+}
 
 .twitter_btn {
 
     background: url('../image/socialbut.png') -70px 0;
 }
-
-.facebook_btn {
-
-    background: url('../image/socialbut.png') -141px 0;
+.twitter_btn:hover {
+    background: url('../image/socialbut_hover.png') -70px 0;
+    transition: background  ease .5s;
 }
 
-.github_btn {
+.facebook_btn {
+        background: url('../image/socialbut.png') -141px 0;
+}
 
+.facebook_btn:hover {
+    background: url('../image/socialbut_hover.png') -141px 0;
+    transition: background  ease .5s;
+}
+
+
+.github_btn {
     background: url('../image/socialbut.png') -212px 0;
+}
+.github_btn:hover {
+    background: url('../image/socialbut_hover.png') -212px 0;
+    transition: background  ease .5s;
 }
 
 .line {
@@ -118,6 +135,9 @@ ul {
     display: block;
     font-family: "Fira Sans";
 }
+.active:hover{
+    color: #fff;
+}
 
 .menu .my_works, .contact_me {
     width: 250px;
@@ -131,7 +151,8 @@ ul {
 }
 
 .menu a:hover {
-    border-bottom: solid 2px #3ba8c0;
+    border-bottom: solid 2px  #3ba8c0 ;
+    text-decoration: none;
 }
 
 .about_me {
@@ -209,38 +230,42 @@ footer {
 
 }
 
-.main_info,.work_exp,.edikashin_exp {
+.main_info,.work_exp,.education_exp {
     border-radius: 4px;
     background-color: #eff3f7;
     margin-left: 65px;
+    margin-bottom: 24px;
 }
 .header{
-    max-width: 340px;
-    max-height: 67px;
-
+    display: inline-block;
+    /*max-width: 340px;*/
     border-bottom:solid 2px #3ba8c0 ;
 
 
 }
 
 .header h1{
-    padding-left: 22px;
+    padding: 0 22px 0 22px;
     line-height: 67px;
+    font-weight: 400;
 }
 
 .avatar {
     height: 200px;
     width: 200px;
     background: url("../image/avatar.png") center center no-repeat;
-    background-size: 100%;
-    margin: 16px 0 0 20px;
+
+    margin: 16px 0 0 22px;
 
 }
 .info{
     margin: 20px 0 0 37px;
 }
 .info li{
-    margin-bottom: 17px;
+    margin-bottom: 16px;
+}
+.info li:nth-last-child(1){
+    margin-bottom: 0px;
 }
 .info .main_word{
     color:  #4a545d;
@@ -253,6 +278,9 @@ footer {
     margin-left:16px;
     font-weight: 400;
 }
+.info ul:last-child{
+    margin-right: 22px;
+}
 .tabs{
     border-radius: 2px;
     background: -webkit-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
@@ -260,27 +288,54 @@ footer {
     background: -o-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
     background: -ms-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
     background: linear-gradient(0deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
-    height: 19px;
     display: inline-block;
     color:  #ffffff;
     font-size: 14px;
     font-weight: 600;
     font-family: "ProximaNovaCond";
+    margin-left: 8px;
 }
+.tabs:nth-last-child(5){
+    margin-left: 20px;
+}
+.tabs:nth-last-child(2){
+
+    margin: 5px 0 26px 172px;
+}
+
 .tabs>p{
-    margin: 13px 3px;
+    margin: 0px 13px;
 }
 
-.place{
-margin-bottom: 32px;
+.place {
+    margin-top: 32px;
+    margin-left: 65px;
+    background: url("../image/port.png") 0px 4px no-repeat;
 }
-.place span {
+ .year {
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 300;
+    padding-left: 66px;
 }
-.place p{
+ .place_work{
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 400;
     margin: 0 0 0px;
+    padding-left: 66px;
+}
+.place:last-child{
+    margin-top: 25px;
+    padding-bottom: 7px;
+}
 
+.place_education{
+    margin-top: 32px;
+    margin-left: 65px;
+    background: url("../image/edu_ico.png") 0px 4px no-repeat;
+}
+.place_education:last-child{
+    margin-top: 25px;
+    margin-bottom: 37px;
+    padding-bottom: 9px;
+    background: url("../image/edu_ico.png") -2px -65px no-repeat;
 }
