@@ -10,12 +10,17 @@
         },
         setUpListeners: function () {
             $('form').on('submit', app.submitForm);
+            $('button').on('submit', app.submitForm);
+            $('.sent').on('submit', app.submitForm);
             $('form').on('keydown', 'input', app.removeError);
+
+
         },
         submitForm: function (e) {
             e.preventDefault();
 
             form = $(this);
+            console.log(form);
 
             if (app.validateForm(form) === false) return false;
         },
@@ -29,14 +34,22 @@
                 var input = $(val),
                     val = input.val(),
                     formGroup = input.parents('.form-group'),
-                    lable = formGroup.find('lable').text().toLowerCase(),
-                    textError = "Введите" + lable;
-                console.log(input);
-                if (val.length === 0) {
+                    label = formGroup.find('label').text().toLowerCase(),
+                    textError = label;
+                    if (val.length === 0) {
+                        if(label==="email"){
+                            formGroup.addClass('has-error').removeClass('has-success');
+                            input.tooltip({
+                                trigger: "manual",
+                                placement: "right",
+                                title: textError
+
+                            }).tooltip('show');
+                        }
                     formGroup.addClass('has-error').removeClass('has-success');
                     input.tooltip({
                         trigger: "manual",
-                        placement: "left",
+                         placement: "left",
                         title: textError
 
                     }).tooltip('show');
@@ -48,9 +61,13 @@
             });
             return valid;
         },
-        removeError:function() {
-            $(this).tooltip('destroy').parents('.form-group').removeClass('has-error')
+        removeError: function () {
+            $(this).tooltip('destroy').parents('.form-group').removeClass('has-error');
+        },
+        clearFeedback: function () {
+
         }
+
     }
     app.initialize();
 }());
