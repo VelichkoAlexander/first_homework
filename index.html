@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Обо мне</title>
-    <link rel="icon" type="image/png" href="image/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="image/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="image/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="image/favicon-16x16.png" sizes="16x16"/>
     <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic&subset=latin,cyrillic-ext'
           rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
@@ -22,83 +22,110 @@
 </head>
 <body>
 <header>
-    <a class="logo" href="#"></a>
-
-    <ul class="social_but ">
-        <li><a class="vk_btn" href="#"></a></li>
-        <li><a class="twitter_btn" href="#"></a></li>
-        <li><a class="facebook_btn" href="#"></a></li>
-        <li><a class="github_btn" href="#"></a></li>
-    </ul>
+    <a class="logo" href="index.html"><img src="image/logo.png" alt="logo"/></a>
+    <div class="social-wrapper">
+        <ul class="social_but clearfix">
+            <li><a class="vk_btn" target="_blank" href="https://vk.com/id33907447"></a></li>
+            <li><a class="twitter_btn" target="_blank" href="https://twitter.com/Al4peace"></a></li>
+            <li><a class="facebook_btn" target="_blank" href="https://www.facebook.com/alex.alforpeace"></a></li>
+            <li><a class="github_btn" target="_blank" href="https://github.com/alex4code"></a></li>
+        </ul>
+    </div>
 </header>
-<div class="line "></div>
+<div class="line"></div>
 <div class="main">
     <div class="container">
         <div class="row">
             <aside class="col-md-3 hidden-xs hidden-sm">
-                <ul class="menu">
-                    <li><a class="about_me active" href="index.html">Обо мне</a></li>
-                    <li><a class="my_works" href="works.html">Мои работы</a></li>
-                    <li><a class="contact_me" href="feedback.html">Связаться со мной</a></li>
-                </ul>
-                <div class="contacts">
+                <nav class="menu">
                     <ul>
-                        <li><p class="contacts_head">Контакты</p></li>
-                        <li><a class="mail" href="mailto:pochta@mail.ru">pochta@mail.ru</a></li>
-                        <li><a class="phone" href="tel:+79812342323">+79812342323</a></li>
-                        <li><a class="skype" href="skype:alex_aka_x?call">nickname</a></li>
+                        <li><a class="about_me active" href="index.html">Обо мне</a></li>
+                        <li><a class="my_works" href="works.html">Мои работы</a></li>
+                        <li><a class="contact_me" href="feedback.html">Связаться со мной</a></li>
                     </ul>
-                </div>
+                </nav>
+                <section>
+                    <div class="contacts">
+                        <ul>
+                            <li><p class="contacts_head">Контакты</p></li>
+                            <li><a class="mail" href="mailto:pochta@mail.ru">pochta@mail.ru</a></li>
+                            <li><a class="phone" href="tel:+79812342323">+79812342323</a></li>
+                            <li><a class="skype" href="skype:alex_aka_x?call">nickname</a></li>
+                        </ul>
+                    </div>
+                </section>
             </aside>
 
             <div class=" col-md-9 col-sm-12">
-                <div class="main_info">
-                    <div class="header">
-                    <h1>Основная информация</h1>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-4 col-xs-12">
-                            <div class="avatar">
-                                <img class="img-responsive" src="image/avatar.png" alt="avatar"/>
+                <article>
+                    <div class="main_info">
+                        <div class="header">
+                            <h1>Основная информация</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-4 col-xs-12">
+                                <div class="avatar">
+                                    <img class="img-responsive" src="image/avatar.png" alt="avatar"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-sm-8 col-xs-12">
+                                <ul class="info">
+                                    <li><span class="main_word">Меня зовут:</span><span class="second_word">Иванов Андрей Степанович</span>
+                                    </li>
+                                    <li><span class="main_word">Мой возраст:</span><span
+                                            class="second_word">25 лет</span>
+                                    </li>
+                                    <li><span class="main_word">Мой город:</span><span class="second_word">Санкт-Петербург, Россия</span>
+                                    </li>
+                                    <li><span class="main_word">Моя специализация:</span><span class="second_word">FRONTEND разработчик</span>
+                                    </li>
+                                    <li><span class="main_word">Ключевые навыки:</span>
+
+                                        <div class="tabs"><p>html</p></div>
+                                        <div class="tabs"><p>css</p></div>
+                                        <div class="tabs"><p>javascript</p></div>
+                                        <div class="tabs"><p>gulp</p></div>
+                                        <div class="tabs"><p>git</p></div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-lg-8 col-sm-8 col-xs-12">
-                            <ul class="info">
-                                <li><span class ="main_word">Меня зовут:</span><span class="second_word">Иванов Андрей Степанович</span></li>
-                                <li><span class ="main_word">Мой возраст:</span><span class="second_word">25 лет</span></li>
-                                <li><span class ="main_word">Мой город:</span><span class="second_word">Санкт-Петербург, Россия</span></li>
-                                <li><span class ="main_word">Моя специализация:</span><span class="second_word">FRONTEND разработчик</span></li>
-                                <li><span class ="main_word">Ключевые навыки:</span><div class="tabs"><p>html</p></div><div class="tabs"><p>css</p></div> <div class="tabs"><p>javascript</p></div><div class="tabs"><p>gulp</p></div><div class="tabs"><p>git</p></div> </li>
-                            </ul>
+                    </div>
+                </article>
+                <article>
+                    <div class="work_exp">
+                        <div class="header">
+                            <h1>Опыт работы</h1>
+                        </div>
+                        <div class="place">
+                            <p class="place_work">"ИП Боровицкий" - продавец дисков </p>
+
+                            <p class="year">Сентябрь 2005 - Август 2008</p>
+                        </div>
+                        <div class="place">
+                            <p class="place_work">"ООО Системы безопастности" - Системный администратор</p>
+
+                            <p class="year">Июнь 2005 - Июль 2008</p>
                         </div>
                     </div>
-                </div>
-                <div class="work_exp">
-                    <div class="header">
-                    <h1>Опыт работы</h1>
+                </article>
+                <article>
+                    <div class="education_exp">
+                        <div class="header">
+                            <h1>Образование</h1>
+                        </div>
+                        <div class="place_education">
+                            <p class="place_work">Незаконченное высшее. СПБГУ ИТМО</p>
+
+                            <p class="year">Октябрь 2012 - по настоящее время</p>
+                        </div>
+                        <div class="place_education">
+                            <p class="place_work">Курсы Loftschool.ru </p>
+
+                            <p class="year">Ноябрь 2014 - по настоящее время</p>
+                        </div>
                     </div>
-                    <div class="place">
-                        <p class="place_work">"ИП Боровицкий" - продавец дисков </p>
-                        <p class="year">Сентябрь 2005 - Август 2008</p>
-                    </div>
-                    <div class="place">
-                        <p class="place_work">"ООО Системы безопастности" - Системный администратор</p>
-                        <p class="year">Июнь 2005 - Июль 2008</p>
-                    </div>
-                </div>
-                <div class="education_exp">
-                    <div class="header">
-                    <h1>Образование</h1>
-                    </div>
-                    <div class="place_education">
-                        <p class="place_work">Незаконченное высшее. СПБГУ ИТМО</p>
-                        <p class="year">Октябрь 2012 - по настоящее время</p>
-                    </div>
-                    <div class="place_education">
-                        <p class="place_work">Курсы Loftschool.ru </p>
-                        <p class="year">Ноябрь 2014 - по настоящее время</p>
-                    </div>
-                </div>
+                </article>
             </div>
 
         </div>

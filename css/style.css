@@ -27,13 +27,15 @@ h1 {
     font-weight: 300;
     margin: 0px;
 
+
 }
 
 header {
-    min-width: 780px;
+    min-width: 840px;
     height: 116px;
     margin: 0 auto;
     background-color: #eff3f7;
+    margin-bottom: 42px;;
 
 }
 
@@ -46,16 +48,16 @@ header .row {
     display: block;
     margin-left: 100px;
     margin-top: 29px;
-    width: 248px;
-    height: 57px;
-    background: url("../image/Logo.png") no-repeat;
     float: left;
 }
 
-.social_but {
+.social-wrapper {
     float: right;
     margin-right: 100px;
     margin-top: 35px;
+
+}
+.social_but{
     list-style: none;
 }
 
@@ -63,6 +65,9 @@ header .row {
     float: left;
     margin-left: 24px;
 }
+.social_but li:first-child{
+    margin: 0;
+    }
 
 .social_but > li > a {
     display: block;
@@ -79,7 +84,7 @@ header .row {
 .vk_btn:hover {
 
     background: url('../image/socialbut_hover.png') 0 0;
-    transition: background ease .5s;
+    transition: background ease .3s;
 }
 
 .twitter_btn {
@@ -89,7 +94,7 @@ header .row {
 
 .twitter_btn:hover {
     background: url('../image/socialbut_hover.png') -70px 0;
-    transition: background ease .5s;
+    transition: background ease .3s;
 }
 
 .facebook_btn {
@@ -98,7 +103,7 @@ header .row {
 
 .facebook_btn:hover {
     background: url('../image/socialbut_hover.png') -141px 0;
-    transition: background ease .5s;
+    transition: background ease .3s;
 }
 
 .github_btn {
@@ -107,24 +112,28 @@ header .row {
 
 .github_btn:hover {
     background: url('../image/socialbut_hover.png') -212px 0;
-    transition: background ease .5s;
+    transition: background ease .3s;
 }
 
-.line {
+header:after{
+    content: "";
+    display:block;
+    position: absolute;
     background-color: #1c667a;
     background: -webkit-linear-gradient(0deg, #1c667a 0%, #f6fafe 0%, #d8d8d8 0%, #f2f6fa 0%, #b6ced6 28%, #1c667a 48%, #b4ccd5 71%, #f2f6fa 100%);
     background: -moz-linear-gradient(0deg, #1c667a 0%, #f6fafe 0%, #d8d8d8 0%, #f2f6fa 0%, #b6ced6 28%, #1c667a 48%, #b4ccd5 71%, #f2f6fa 100%);
     background: -o-linear-gradient(0deg, #1c667a 0%, #f6fafe 0%, #d8d8d8 0%, #f2f6fa 0%, #b6ced6 28%, #1c667a 48%, #b4ccd5 71%, #f2f6fa 100%);
     background: -ms-linear-gradient(0deg, #1c667a 0%, #f6fafe 0%, #d8d8d8 0%, #f2f6fa 0%, #b6ced6 28%, #1c667a 48%, #b4ccd5 71%, #f2f6fa 100%);
     background: linear-gradient(90deg, #1c667a 0%, #f6fafe 0%, #d8d8d8 0%, #f2f6fa 0%, #b6ced6 28%, #1c667a 48%, #b4ccd5 71%, #f2f6fa 100%);
-    /*width: 1399px;*/
     height: 3px;
-
+    width: 100%;
+    top: 116px;
 }
 
-.main {
-    background: url("../image/comppattern2.png");
-    padding-top: 39px;
+
+
+body{
+    background: url("../image/comppattern2.png")
 }
 
 .container {
@@ -135,6 +144,7 @@ header .row {
     margin-bottom: 23px;
 
 }
+
 
 ul {
     padding: 0px;
@@ -158,6 +168,7 @@ ul {
 
 .menu li:last-child {
     border-radius: 0 0 5px 5px;
+
 }
 
 .menu a {
@@ -174,11 +185,21 @@ ul {
     color: #959aa8;
 
 }
+.menu a:after{
+    content: '';
+    border-bottom: solid 2px #3ba8c0;
+    background-color: #959aa8;
+}
+
 
 .menu a:hover {
-    border-bottom: solid 2px #3ba8c0;
+
     text-decoration: none;
     color: #3ba8c0;
+    border:none;!important;
+}
+.menu li:last-child a{
+    border: none;
 }
 
 .about_me {
@@ -717,5 +738,12 @@ footer {
 .capcha{
     margin-top: 38px;
     margin-left: 48px;
+}
+.text_area{
+    margin-top: 14px;
+}
+
+footer p{
+    margin: 0;
 }
 
