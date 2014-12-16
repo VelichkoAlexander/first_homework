@@ -40,7 +40,6 @@ a:focus {
     text-decoration: none;
 }
 
-
 @font-face {
     font-family: 'ProximaNovaCond';
     src: url('../fonts/proximanovacond-semibold-webfont.eot');
@@ -554,64 +553,62 @@ footer {
 }
 
 .sent {
-    display: inline-block;
     border-radius: 5px;
     width: 139px;
     height: 31px;
     color: #ffffff;
     font-size: 19px;
-    font-weight: 300;
     text-align: center;
-    line-height: 33px;
+    line-height: 19px;
     background: #48cbe8;
-    border-bottom: 4px solid #3ba8c0;
-    margin-right: 119px;
-    cursor: pointer;
+    border-bottom: 3px solid #3ba8c0;
 
 
 }
 
 .clear {
-    display: inline-block;
     border-radius: 5px;
-    background-color: #849db5;
-    width: 141px;
+    width: 139px;
     height: 31px;
     color: #ffffff;
     font-size: 19px;
     text-align: center;
-    line-height: 31px;
-    cursor: pointer;
+    line-height: 19px;
+    background: #849db5;
+    border-bottom: 3px solid #687b8f;
+    float: right;
 
 }
 
 .sent:hover {
 
-    text-decoration: none;
-    /*transition: ease .3s;*/
-    font-size: 19px;
     color: #fff;
     border-bottom: none;
 
 }
 
+.sent:focus {
+    color: #fff;
+}
+
+.clear:focus {
+    color: #fff;
+}
+
 .clear:hover {
-    border-radius: 5px;
-    background-color: #849db5;
-    height: 31px;
-    line-height: 31px;
-    text-decoration: none;
-    color: #ffffff;
-    box-shadow: none;
-    transition: ease .5s;
+    border-bottom: none;
+
+    color: #fff;
 }
 
 .sent:active {
-    border-top: 4px solid #3ba8c0;
+    border-top: 3px solid #3ba8c0;
+    color: #fff;
 }
 
 .clear:active {
-    border-top: 4px solid #3ba8c0;
+    border-top: 3px solid #687b8f;
+    color: #fff;
 }
 
 .add_project {
@@ -778,27 +775,27 @@ footer {
     /*}*/
 }
 
-.feedback_form label {
+.contact_wrapper {
+    width: 402px;
+    margin: 43px auto;
+}
+
+.name {
+    float: left;
+}
+
+.email {
+    float: right;
+}
+
+.contact_wrapper label {
     font-size: 17px;
     color: #959aa8;
     font-weight: 300;
 }
 
-.feedback_form {
-    margin-left: 122px;
-    margin-top: 45px;
-}
-
-.feedback_form #name_feedback {
-    width: 85%;
-}
-
-.feedback_form #email_feedback {
-    width: 81%;
-}
-
-#text_feedback {
-    width: 84%
+.contact_wrapper .form-group {
+    margin-bottom: 0;
 }
 
 .capcha {

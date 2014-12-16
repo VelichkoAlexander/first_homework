@@ -62,33 +62,37 @@
                         </div>
                         <div class="line_2"></div>
                         <div class="row">
-                            <form role="form" class="col-md-9 feedback_form">
-                                <div class="form-inline">
-                                    <div class="form-group">
-                                        <label for="name_feedback">Имя</label>
-                                        <input type="text" id="name_feedback" class="form-control"
-                                               placeholder="Как к Вам Обращатся"/>
+                            <div class="contact_wrapper">
+                                <form role="form">
+                                    <div class="clearfix">
+                                        <div class="name form-group">
+                                            <label for="name_feedback">Имя</label>
+                                            <input type="text" id="name_feedback" class="form-control"
+                                                   placeholder="Как к Вам Обращатся"/>
+                                        </div>
+                                        <div class="email form-group">
+                                            <label for="email_feedback">Email</label>
+                                            <input type="email" id="email_feedback" class="form-control"
+                                                   placeholder="Куда мне писать"/>
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="email_feedback">Email</label>
-                                        <input type="email" id="email_feedback" class="form-control"
-                                               placeholder="Куда мне писать"/>
-                                    </div>
-                                </div>
-                                <div class="form-group text_area">
-                                    <label for="text_feedback">Сообщение</label>
+                                    <div class="form-group text_area">
+                                        <label for="text_feedback">Сообщение</label>
                                     <textarea class="form-control" id="text_feedback" cols="0" rows="8"
                                               placeholder="Кратко в чем суть"></textarea>
-                                </div>
-                                <div class="capcha">
-                                    <div class="g-recaptcha"
-                                         data-sitekey="6LfhNP8SAAAAAMbKFl-ORyvdlMy1bJptutCoEd7n"></div>
-                                </div>
-                                <div class="buttons_1 form-group">
-                                    <a onclick="$(this).closest('form').submit()" class="sent">Добавить</a>
-                                    <a class="clear">Отчистить</a>
-                                </div>
+                                    </div>
+                                    <div class="capcha">
+                                        <div class="g-recaptcha"
+                                             data-sitekey="6LfhNP8SAAAAAMbKFl-ORyvdlMy1bJptutCoEd7n"></div>
+                                    </div>
+                                    <div class="buttons_1">
+                                        <button type="submit" class="btn sent">Добавить</button>
+                                        <button type="reset" class="btn clear">Отчистить</button>
+
+                                    </div>
+                            </div>
                             </form>
+
 
                         </div>
                     </div>
