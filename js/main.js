@@ -10,9 +10,8 @@
         },
         setUpListeners: function () {
             $('form').on('submit', app.submitForm);
-            $('button').on('submit', app.submitForm);
-            $('.sent').on('submit', app.submitForm);
             $('form').on('keydown', 'input', app.removeError);
+            $('form').on('reset', app.clearFeedback);
 
 
         },
@@ -20,9 +19,38 @@
             e.preventDefault();
 
             form = $(this);
-            console.log(form);
-
+            var submitBtn = form.find('button[type="submit"]');
+            app.clearFeedback();
             if (app.validateForm(form) === false) return false;
+            submitBtn.attr('disabled', 'disabled');
+            form.find('.alert').remove();
+
+            var str = form.serialize();
+
+            $.ajax({
+                url: 'sent_mail/mail.php',
+                type: 'POST',
+                data: str
+            })
+
+                .done(function (msg) {
+                    if (msg === "OK") {
+                        console.log("result");
+                        var result = '<div class="alert alert-success" role="alert">Спасибо за заявку! Мы с вами свяжемся!</div>'
+                        form.find('.clearfix').before(result);
+                        //$("form")[0].reset();
+
+                    } else {
+                        result = '<div class="alert alert-danger" role="alert">' + msg + '</div>';
+                        form.find('.clearfix').before(result);
+
+
+                    }
+                })
+                .always(function () {
+                    submitBtn.removeAttr('disabled');
+
+                })
         },
         validateForm: function () {
             var inputs = form.find('input');
@@ -36,20 +64,20 @@
                     formGroup = input.parents('.form-group'),
                     label = formGroup.find('label').text().toLowerCase(),
                     textError = label;
-                    if (val.length === 0) {
-                        if(label==="email"){
-                            formGroup.addClass('has-error').removeClass('has-success');
-                            input.tooltip({
-                                trigger: "manual",
-                                placement: "right",
-                                title: textError
+                if (val.length === 0) {
+                    if (label === "email") {
+                        formGroup.addClass('has-error').removeClass('has-success');
+                        input.tooltip({
+                            trigger: "manual",
+                            placement: "right",
+                            title: textError
 
-                            }).tooltip('show');
-                        }
+                        }).tooltip('show');
+                    }
                     formGroup.addClass('has-error').removeClass('has-success');
                     input.tooltip({
                         trigger: "manual",
-                         placement: "left",
+                        placement: "left",
                         title: textError
 
                     }).tooltip('show');
@@ -65,7 +93,8 @@
             $(this).tooltip('destroy').parents('.form-group').removeClass('has-error');
         },
         clearFeedback: function () {
-
+            var alert = form.find('.alert');
+            alert.remove();
         }
 
     }
