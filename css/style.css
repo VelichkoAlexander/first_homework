@@ -841,5 +841,21 @@ footer {
 
 footer p {
     margin: 0;
+    display: inline-block;
+
+}
+
+.lock {
+    display: inline-block;
+    background: url("../image/login.png") center no-repeat;
+    margin-top: 20px;
+    height: 32px;
+    width: 25px;
+    margin-left: 100px;
+}
+
+.lock:hover {
+    background: url("../image/login-hover.png") center no-repeat;
+    transition: background ease .3s;
 }
 

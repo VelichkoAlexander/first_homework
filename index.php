@@ -1,63 +1,14 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Обо мне</title>
-    <link rel="icon" type="image/png" href="image/favicon-32x32.png" sizes="32x32"/>
-    <link rel="icon" type="image/png" href="image/favicon-16x16.png" sizes="16x16"/>
-    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic&subset=latin,cyrillic-ext'
-          rel='stylesheet' type='text/css'>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!--maine css-->
-    <link rel="stylesheet" href="css/style.css"/>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-<header>
-    <a class="logo" href="index.html"><img src="image/Logo.png" alt="logo"/></a>
-    <div class="social-wrapper">
-        <ul class="social_but clearfix">
-            <li><a class="vk_btn" target="_blank" href="https://vk.com/id33907447"></a></li>
-            <li><a class="twitter_btn" target="_blank" href="https://twitter.com/Al4peace"></a></li>
-            <li><a class="facebook_btn" target="_blank" href="https://www.facebook.com/alex.alforpeace"></a></li>
-            <li><a class="github_btn" target="_blank" href="https://github.com/alex4code"></a></li>
-            <li>
-                <div class="menu-pl"></div>
-            </li>
-        </ul>
-
-    </div>
-</header>
-
+<?php
+$title = 'Обо мне';
+require_once 'head.php';
+require_once 'header.php';
+?>
 <div class="main">
     <div class="container">
         <div class="row">
-            <aside class="col-md-3 hidden-xs hidden-sm">
-                <nav class="menu">
-                    <ul>
-                        <li class="active"><a class="about_me " href="index.html">Обо мне</a></li>
-                        <li><a class="my_works" href="works.html">Мои работы</a></li>
-                        <li class="last_ie8"><a class="contact_me" href="feedback.html">Связаться со мной</a></li>
-                    </ul>
-                </nav>
-                <section class="contacts">
-
-                    <h2 class="contacts_head">Контакты</h2>
-                        <ul>
-                            <li><a class="mail" href="mailto:alvi@mail.ua">alvi@mail.ua</a></li>
-                            <li><a class="phone" href="tel:+380968862391">+380968862391</a></li>
-                            <li><a class="skype" href="skype:alex_aka_x?call">alex_aka_x</a></li>
-                        </ul>
-                </section>
-            </aside>
+            <?
+            require_once 'menu.php';
+            ?>
 
             <div class=" col-md-9 col-sm-12">
                 <article>
@@ -136,21 +87,6 @@
         </div>
     </div>
 </div>
-<div class="line "></div>
-<footer>
-    <div class="lock col-md-1 col-xs-1"></div>
-    <p>© 2014, Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
-</footer>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!--<script src="js/jquery.min.js"></script>-->
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.placeholder.js"></script>
-
-<script>
-    $('input, textarea').placeholder();
-</script>
-</body>
-</html>
+<?
+require_once 'footer.php';
+?>
